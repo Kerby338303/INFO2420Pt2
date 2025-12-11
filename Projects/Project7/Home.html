@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=\"UTF-8\">
+<title>Rent A Pet - Home</title>
+<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyles.css\">
+<script type=\"text/javascript\" src=\"myscripts.js\"></script>
+</head>
+
+<body onload=\"initPage();\">
+<div id=\"container\">
+
+<header>
+  <a href=\"Home.html\"
+     onmouseover=\"document.getElementById('logo').src='Images/logo2.jpg';\"
+     onmouseout=\"document.getElementById('logo').src='Images/logo1.jpg';\">
+    <img src=\"Images/logo1.jpg\"
+         alt=\"Rent A Pet logo\"
+         width=\"140\"
+         height=\"160\"
+         id=\"logo\">
+  </a>
+
+  <!-- You can replace this banner with your Project 5 banner if desired -->
+  <img src=\"Images/rentapet_banner.png\"
+       alt=\"Rent A Pet banner\"
+       width=\"560\"
+       height=\"160\"
+       id=\"banner\">
+
+  <nav>
+    <ul>
+      <li><a href=\"Home.html\">Home</a></li>
+      <li><a href=\"Home.html\">About Us</a></li>
+      <li><a href=\"Home.html\">Tributes</a></li>
+      <li><a href=\"Home.html\">Survey</a></li>
+      <li><a href=\"Home.html\">Favorites</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <article>
+    <h1>Welcome to Rent A Pet</h1>
+
+    <p>Welcome to Rent A Pet! If you love to interact with pets like we do, you should
+    enjoy looking around this site. Take a look at our Pet Profiles and take the
+    opportunity to complete our survey.</p>
+
+    <p>We provide short-term companions for people who want the fun and love of a pet
+    without the full-time responsibility. Browse the site to meet some of our favorite
+    animals and learn how the rental program works.</p>
+
+    <p>
+      <a href=\"#\"
+         onmouseover=\"document.getElementById('printbtn').src='Images/print2.jpg';\"
+         onmouseout=\"document.getElementById('printbtn').src='Images/print1.jpg';\">
+        <img src=\"Images/print1.jpg\"
+             alt=\"Print this page\"
+             width=\"200\"
+             height=\"50\"
+             id=\"printbtn\">
+      </a>
+    </p>
+
+    <h2>Pet Photo Gallery</h2>
+
+    <div id=\"image\">
+      <img src=\"Images/fullsize/image1lg.jpg\"
+           alt=\"Cat and dog friends\"
+           id=\"bigpic\"
+           width=\"400\"
+           height=\"267\">
+      <h3 id=\"bigtitle\">Cat and dog friends</h3>
+    </div>
+
+    <div id=\"thumbs\">
+      <img src=\"Images/thumbnails/image1sm.jpg\"
+           alt=\"Cat and dog friends\"
+           width=\"150\"
+           height=\"100\"
+           onmouseover=\"swapImage(0);\">
+
+      <img src=\"Images/thumbnails/image2sm.jpg\"
+           alt=\"Hunting dogs\"
+           width=\"150\"
+           height=\"100\"
+           onmouseover=\"swapImage(1);\">
+
+      <img src=\"Images/thumbnails/image3sm.jpg\"
+           alt=\"Girl riding a horse\"
+           width=\"100\"
+           height=\"150\"
+           onmouseover=\"swapImage(2);\">
+
+      <img src=\"Images/thumbnails/image4sm.jpg\"
+           alt=\"Pot-bellied pig in the grass\"
+           width=\"150\"
+           height=\"100\"
+           onmouseover=\"swapImage(3);\">
+    </div>
+
+    <h2>Mini Tribute</h2>
+
+    <img src=\"Images/BassetHoundSM.jpg\"
+         alt=\"Basset hound sitting and looking up\"
+         class=\"img-right\"
+         width=\"200\"
+         height=\"199\">
+
+    <p>Bessie Anderson lives in a retirement center and still loves taking dogs for
+    walks. With Rent A Pet she can reserve a gentle dog once a week and enjoy an
+    afternoon in the park without worrying about long-term care. The weekly visit
+    keeps her active and gives her something to look forward to &gt;&gt;</p>
+
+    <div style=\"clear: both;\"></div>
+
+  </article>
+</section>
+
+<footer>
+  <p><a href=\"mailto:christian@solidbaseit.com\">Webmaster: christian@solidbaseit.com</a></p>
+  <p>This web site has been created solely for educational purposes.</p>
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+/* External style sheet for Project 7 - Rent A Pet */
+
+body {
+  background-color: #fdfaf5;
+  color: #222222;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centered fixed-width container */
+#container {
+  width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+/* Text elements */
+h1 {
+  color: #2a5d84;
+  font-size: 200%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  color: #3a7a3f;
+  font-size: 140%;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  color: #b35a1f;
+  font-size: 120%;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+p {
+  margin-bottom: 0.75em;
+}
+
+blockquote {
+  margin: 0.75em 2em;
+  font-style: italic;
+}
+
+ul, ol {
+  margin: 0.5em 0 0.75em 2em;
+}
+
+/* Link styles */
+a:link {
+  color: #c03a2b;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #7b2d2d;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ff7f50;
+  text-decoration: none;
+}
+
+/* Image float helpers */
+.img-left {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+.img-right {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+.img-center {
+  display: block;
+  margin: 0.5em auto 1em auto;
+}
+
+/* Header and navigation layout */
+header {
+  width: 900px;
+  background-color: #6e7b5e;
+  overflow: hidden;
+  padding: 10px 10px 5px 10px;
+  box-sizing: border-box;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+}
+
+#banner {
+  float: left;
+}
+
+/* nav inside header, floated right */
+nav {
+  float: right;
+  width: 30%;
+  text-align: right;
+  margin-top: 25px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* navigation links styled as buttons */
+nav a:link,
+nav a:visited {
+  display: inline-block;
+  padding: 6px 10px;
+  background-color: #2a5d84;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 95%;
+}
+
+nav a:hover {
+  background-color: #ff7f50;
+  color: #ffffff;
+}
+
+/* Section and article layout */
+section {
+  width: 900px;
+  background-image: url('Images/backimage.jpg');
+  background-repeat: repeat-y;
+  overflow: hidden;
+}
+
+article {
+  width: 800px;
+  margin: 0 auto;
+  padding: 15px 20px 25px 20px;
+  background-color: #fdfaf5;
+  box-sizing: border-box;
+}
+
+/* image swap containers from Project 6 */
+#thumbs,
+#image {
+  width: 700px;
+  border: solid 1px #000000;
+  text-align: center;
+  margin: 0 auto;
+  color: #000000;
+  background: #eeeeee;
+  padding: 5px;
+}
+
+#thumbs {
+  margin-top: 10px;
+}
+
+#thumbs img {
+  border: solid 1px #000000;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#image {
+  height: 400px;
+}
+
+/* footer */
+footer {
+  width: 900px;
+  background-color: #3a7a3f;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 90%;
+  box-sizing: border-box;
+}
+
+footer a:link,
+footer a:visited {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #ffebc0;
+  text-decoration: none;
+}

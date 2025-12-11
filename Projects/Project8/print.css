@@ -1,0 +1,70 @@
+/* Print style sheet for Project 8 - Rent A Pet */
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 100%;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+
+/* container and structural boxes take full width when printing */
+#container {
+  width: 100%;
+  margin: 0;
+}
+
+header,
+section,
+article {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+/* hide navigation and footer when printing */
+nav {
+  display: none;
+}
+
+footer {
+  display: none;
+}
+
+/* article content nearly full width with margins */
+article {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* remove floats so text flows in normal document order */
+.img-left,
+.img-right {
+  float: none;
+  margin: 0 0 0.5em 0;
+}
+
+/* image swap boxes can simply print as block areas */
+#thumbs,
+#image {
+  width: 100%;
+  border: none;
+  background: none;
+  text-align: left;
+  padding: 0;
+}
+
+/* print links as normal text, but still underlined */
+a:link,
+a:visited {
+  color: #000000;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: underline;
+}

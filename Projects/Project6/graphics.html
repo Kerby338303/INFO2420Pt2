@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rent A Pet - Graphics</title>
+
+<style type="text/css">
+body {
+  background-color: #fdfaf5;
+  color: #222222;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0 10%;
+}
+
+h1 {
+  color: #2a5d84;
+  font-size: 200%;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  color: #3a7a3f;
+  font-size: 140%;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 0.75em;
+}
+
+/* container for image swap */
+#thumbs, #image {
+  width: 700px;
+  border: solid 1px #000000;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  color: #000000;
+  background: #eeeeee;
+  padding: 5px;
+}
+
+#thumbs {
+  margin-top: 10px;
+}
+
+#thumbs img {
+  border: solid 1px #000000;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#image {
+  height: 400px;
+}
+
+.instructions {
+  font-style: italic;
+}
+
+/* simple spacing for sections */
+.section {
+  margin-bottom: 2em;
+}
+
+img {
+  max-width: 100%;
+}
+</style>
+
+<script type="text/javascript">
+var imgArray = [];
+var titleArray = [];
+
+function preloadImages() {
+  var files = [
+    "Images/print2.jpg",
+    "Images/logo2.jpg",
+    "Images/fullsize/image1lg.jpg",
+    "Images/fullsize/image2lg.jpg",
+    "Images/fullsize/image3lg.jpg",
+    "Images/fullsize/image4lg.jpg"
+  ];
+  for (var i = 0; i < files.length; i++) {
+    var img = new Image();
+    img.src = files[i];
+  }
+}
+
+function loadArrays() {
+  imgArray[0] = new Image();
+  imgArray[0].src = "Images/fullsize/image1lg.jpg";
+  titleArray[0] = "Cat and dog friends";
+
+  imgArray[1] = new Image();
+  imgArray[1].src = "Images/fullsize/image2lg.jpg";
+  titleArray[1] = "Hunting dogs";
+
+  imgArray[2] = new Image();
+  imgArray[2].src = "Images/fullsize/image3lg.jpg";
+  titleArray[2] = "Girl riding a horse";
+
+  imgArray[3] = new Image();
+  imgArray[3].src = "Images/fullsize/image4lg.jpg";
+  titleArray[3] = "Pot-bellied pig in the grass";
+}
+
+function swapImage(index) {
+  document.getElementById("bigpic").src = imgArray[index].src;
+  document.getElementById("bigtitle").innerHTML = titleArray[index];
+}
+
+function initPage() {
+  preloadImages();
+  loadArrays();
+}
+</script>
+
+</head>
+
+<body onload="initPage()">
+
+<h1>Rent A Pet – Graphics and JavaScript Behaviors</h1>
+
+<p>This page shows the graphics and JavaScript behaviors used for the Rent A Pet
+web site: a print button rollover, a logo rollover, a thumbnail image swap, and
+a two-column background graphic.</p>
+
+<div class="section">
+  <h2>Print Button Rollover</h2>
+  <p>Hover over the button to see the rollover effect.</p>
+
+  <a href="#"
+     onmouseover="document.getElementById('print').src='Images/print2.jpg';"
+     onmouseout="document.getElementById('print').src='Images/print1.jpg';">
+    <img src="Images/print1.jpg"
+         alt="Print Page"
+         width="200"
+         height="50"
+         id="print">
+  </a>
+</div>
+
+<div class="section">
+  <h2>Logo Rollover</h2>
+  <p>Hover over the logo to swap between the original logo and a variation.</p>
+
+  <a href="#"
+     onmouseover="document.getElementById('logo').src='Images/logo2.jpg';"
+     onmouseout="document.getElementById('logo').src='Images/logo1.jpg';">
+    <img src="Images/logo1.jpg"
+         alt="Rent A Pet logo"
+         width="140"
+         height="160"
+         id="logo">
+  </a>
+</div>
+
+<div class="section">
+  <h2>Thumbnail Image Swap</h2>
+  <p class="instructions">
+    Move your mouse over a thumbnail to see a larger image and title.
+  </p>
+
+  <div id="image">
+    <img src="Images/fullsize/image1lg.jpg"
+         alt="Cat and dog friends"
+         id="bigpic"
+         width="400"
+         height="267">
+    <h3 id="bigtitle">Cat and dog friends</h3>
+  </div>
+
+  <div id="thumbs">
+    <img src="Images/thumbnails/image1sm.jpg"
+         alt="Cat and dog friends"
+         width="150"
+         height="100"
+         onmouseover="swapImage(0);">
+
+    <img src="Images/thumbnails/image2sm.jpg"
+         alt="Hunting dogs"
+         width="150"
+         height="100"
+         onmouseover="swapImage(1);">
+
+    <img src="Images/thumbnails/image3sm.jpg"
+         alt="Girl riding a horse"
+         width="100"
+         height="150"
+         onmouseover="swapImage(2);">
+
+    <img src="Images/thumbnails/image4sm.jpg"
+         alt="Pot-bellied pig in the grass"
+         width="150"
+         height="100"
+         onmouseover="swapImage(3);">
+  </div>
+</div>
+
+<div class="section">
+  <h2>Two-Column Background Graphic</h2>
+  <p>This background image will be used as a repeating background in a two-column
+  layout for the Rent A Pet site in a later project.</p>
+
+  <img src="Images/2colback.jpg"
+       alt="Two column background graphic for Rent A Pet"
+       width="900"
+       height="150">
+</div>
+
+</body>
+</html>
