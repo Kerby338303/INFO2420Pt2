@@ -1,0 +1,80 @@
+/* Project 7 Practice - External Styles */
+
+/* Body wraps the entire page content */
+body{
+    margin: 0;
+    background-image: url('Images/background.gif');
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+}
+
+/* Header / masthead */
+header{
+    width: 760px;
+    height: 150px;
+    background-color: #CCCCCC;
+    text-align: center;
+    padding-top: 10px;
+    border: dashed medium navy;
+    margin: auto;
+}
+
+/* Section that wraps nav and article */
+section{
+    width: 760px;
+    background-image: url('Images/inner_background.gif');
+    background-repeat: repeat-y;
+    overflow: hidden;
+    border-right: dashed medium navy;
+    border-left: dashed medium navy;
+    margin: auto;
+}
+
+/* Navigation column */
+nav{
+    float: left;
+    width: 110px;
+    padding-left: 10px;
+}
+
+/* Article column */
+article{
+    float: left;
+    width: 600px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    width: 760px;
+    height: 70px;
+    border: dashed medium navy;
+    background-color: #CCCCCC;
+    margin: auto;
+}
+
+/* Logo floated left in header */
+.logoleft{
+    float: left;
+    padding-top: 30px;
+    padding-left: 15px;
+}
+
+/* Navigation links */
+nav a{
+    border: 2px inset #CCCCCC;
+    background-color: maroon;
+    line-height: 250%;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+/* Hover state for nav links */
+nav a:hover{
+    color: yellow;
+    border: 2px outset #CCCCCC;
+}

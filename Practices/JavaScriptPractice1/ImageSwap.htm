@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>JavaScript Practice 1 -Image Swap</title>
+
+<style type="text/css">
+
+	#thumbs, #image {
+		width: 680px;
+		border: solid 1px #000;
+		text-align: center;
+		margin: 0 auto 0 auto;
+		color: #000;
+		background: #eee;
+		padding: 5px;
+	}
+
+	#thumbs {
+		margin-top: 10px;
+	}
+
+			
+	#thumbs img {
+		border: solid 1px #000;
+		margin: 5px;
+	}
+
+	#image{
+		height:500px;
+	}
+
+	.instructions{
+		font-style:italic;
+	}
+
+</style>
+
+<script language="JavaScript" type="text/javascript">
+<!-- Begin comment for older broswers
+
+		var imgArray = new Array(
+            'CoupleSailingLg.jpg',
+            'PigLg.jpg',
+            'SaladLg.jpg',
+            'StorkLg.jpg',
+            'HamsterLg.jpg'
+        );
+
+
+        var titleArray = new Array(
+            'Newlyweds Sailing',
+            'Boy and His Pig',
+            'Yummy Salad',
+            'Stork at Sunset',
+            'Happy Hamster'
+        );
+            
+        
+			
+		var imgPath = "Images/Fullsize/";
+		
+		function swapImage(imgID) {
+
+			var theImage = document.getElementById('theImage');
+			var textDiv = document.getElementById('bottomText');
+
+			var newImg;
+			var textTitle;
+
+			newImg = imgArray[imgID];
+			theImage.src = imgPath + newImg;
+
+			textTitle=titleArray[imgID];
+
+      			textDiv.innerHTML = textTitle;
+		}
+			
+		function preloadImages() {		
+			for(var i = 0; i < imgArray.length; i++) {
+				var tmpImg = new Image;
+				tmpImg.src = imgPath + imgArray[i];
+			}
+		}
+// End comment for older browsers -->
+</script>
+
+</head>
+
+<body onload="preloadImages()">
+
+	<h1>Image Swap Example</h1>
+	<p class="instructions">[Instructions:  Mouse over small images to see larger image.]</p>
+
+	<div id="thumbs">
+		<img src="Images/Thumbnails/CoupleSailingSm.jpg" alt="Couple Sailing" onmouseover="swapImage(0);" />
+		<img src="Images/Thumbnails/PigSm.jpg" alt="Pig and Boy" onmouseover="swapImage(1);" />
+		<img src="Images/Thumbnails/SaladSm.jpg" alt="Salad" onmouseover="swapImage(2);" />
+		<img src="Images/Thumbnails/StorkSm.jpg" alt="Stork" onmouseover="swapImage(3);" />
+        <img src="Images/Thumbnails/HamsterSm.jpg" alt="Hamster" onmouseover="swapImage(4);" />
+		<br />
+			
+	</div>
+	<div id="image">
+
+		<img id="theImage" src="Images/FullSize/CoupleSailingLg.jpg" alt="CoupleSailing" />
+		<h3 id="bottomText">Newlyweds Sailing</h3>
+	</div>
+		
+		
+	
+</body>
+
+</html>

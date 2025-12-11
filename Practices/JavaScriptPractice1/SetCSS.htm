@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>JavaScript Practice 1- SetCSS</title>
+
+<script type="text/javascript">
+<!-- Beginning of JavaScript -
+
+	function changecolor(code) {
+
+    var myHeading = document.getElementById('Top');
+
+    // change the body background color
+    document.body.style.backgroundColor = code;
+
+    // change heading styles based on the color passed in
+    if (code == 'blue') {
+        myHeading.style.color = 'white';
+        myHeading.style.textDecoration = 'none';
+        myHeading.style.textAlign = 'right';
+        myHeading.style.fontSize = '30px';
+    } else if (code == 'red') {
+        myHeading.style.color = 'black';
+        myHeading.style.textDecoration = 'none';
+        myHeading.style.textAlign = 'center';
+        myHeading.style.fontSize = '44px';
+    } else if (code == 'yellow') {
+        myHeading.style.color = 'red';
+        myHeading.style.textDecoration = 'underline';
+        myHeading.style.textAlign = 'center';
+        myHeading.style.fontSize = '24px';
+    } else {
+        myHeading.style.color = 'pink';
+        myHeading.style.textDecoration = 'none';
+        myHeading.style.textAlign = 'left';
+        myHeading.style.fontSize = '44px';
+    }
+
+/**************************************************************************************
+	Use an if.. else if.. else function to set the following styles using the myHeading variable 
+	which was set with the <h1> id.  use myHeading.stye.propertyname= value;
+	put string values in " ".  CSS properties that are two word are put together as one word,
+	the first letter of the first word lowerCase and the first letter of the seond word being uppercase as in fontSize.
+	Pseudo-code for the If statement
+	If the code passed into the function is equal to 'blue' then set the color to be 'white', the textDecoration to be 'none',
+	the textAlign to be 'right', and the fontSize to be '30px'.
+	Else if the code passed is equal to 'red', set the color to be 'black', the textDecoration should be 'none', the textAlign should be 'center
+	, and the fontSize should be '44px'.
+	Else if the code passed is equal to 'yellow', set the color to be 'red', the textDecoration should be 'underline',
+	the textAlign should be 'center', and the fontSize should be '24px'.
+	Else just set the color to be 'pink', the textDecoration to be 'none', the fontSize to be '44px', and	the textAlign to be 'left'.
+	************************************************************************************************/
+
+	}
+
+
+// - End of JavaScript - -->
+</script>
+
+</head>
+
+<body onload="changecolor('red');">
+
+	<h1 id="Top">Changing CSS Properties in JavaScript</h1>
+
+
+	<form>
+		
+		<input type="button" name="Button1" value="RED" onclick="changecolor('red')" />
+
+		<input type="button" name="Button2" value="YELLOW" onClick="changecolor('yellow')" />
+
+		<input type="button" name="Button3" value="BLUE" onclick="changecolor('blue')" />
+
+		<input type="button" name="Button4" value="WHITE" onclick="changecolor('white')" />
+
+	</form>
+
+</body>
+</html>

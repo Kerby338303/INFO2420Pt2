@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Image Map Example</title>
+<style type="text/css">
+body {
+    background-color: #FFFFCC;
+    font-size: large;
+    color: #000080;
+}
+br {
+    clear: all;
+}
+</style>
+</head>
+
+<body>
+<h1>Working with Images</h1>
+<p>When creating web pages, you should keep in mind several things:</p>
+<ul>
+  <li>Each image you use should serve a purpose.</li>
+  <li>Each image should be optimized for the web.</li>
+  <li>You should use an image editor to resize and enhance images.</li>
+</ul>
+
+<h2>Image Map Example</h2>
+
+<p>
+<img src="Images/map.gif" alt="Colorful shapes image map" id="ImgMap0" usemap="#ImgMap0" width="275" height="289">
+</p>
+
+<map name="ImgMap0" id="ImgMap0">
+  <area alt="circle page" href="circle.html" shape="circle" coords="91,109,31">
+  <area alt="rectangle page" href="rectangle.html" shape="rect" coords="149,39,224,114">
+  <area alt="polygon page" href="polygon.html" shape="poly" coords="172,161,190,192,221,205,194,217,178,248,160,222,130,201">
+</map>
+
+<p>Above is an example of an image map with three clickable areas: a circle, a rectangle, and a polygon star.</p>
+
+</body>
+</html>
